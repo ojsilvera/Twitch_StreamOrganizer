@@ -2,7 +2,7 @@
 
 ## **Descripción General de la Extensión**
 
-**Nombre**: Twitch Live Grouper+
+**Nombre**: Twitch_StreamOrganizer
 **Propósito**: Organiza automáticamente los canales en vivo del panel izquierdo de Twitch por categoría, permitiendo colapsar/expandir secciones y recordando las preferencias del usuario entre sesiones.
 
 ---
