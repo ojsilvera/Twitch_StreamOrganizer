@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch_StreamOrganizer",
+  "version": "1.0",
+  "description": "Agrupa los canales en la barra lateral de Twitch por categoría",
+  "permissions": ["activeTab"],
+  "host_permissions": ["*://www.twitch.tv/*"],
+  "content_scripts": [
+      {
+          "matches": ["*://www.twitch.tv/*"],
+          "js": ["content.js"]
+      }
+  ]
+}
