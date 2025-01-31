@@ -1,15 +1,23 @@
 {
     "manifest_version": 3,
-    "name": "Twitch_StreamOrganizer",
-    "version": "1.1",
-    "icons": { "128": "icon.png" },
-    "permissions": ["storage"],
+    "name": "Live Channel Categorizer",
+    "version": "1.0",
+    "description": "Agrupa los canales en directo por categoría en el panel izquierdo.",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["https://www.sitio-streaming.com/*"],
     "content_scripts": [
-    {
-        "matches": ["https://www.twitch.tv/*"],
-        "css": ["styles.css"],
-        "js": ["content-script.js"]
-    }
+      {
+        "matches": ["https://www.sitio-streaming.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
     ],
-    "host_permissions": ["https://www.twitch.tv/*"]
-}
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+      }
+    }
+  }
