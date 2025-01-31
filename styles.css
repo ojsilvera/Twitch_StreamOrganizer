@@ -1,0 +1,40 @@
+/* ... estilos previos ... */
+
+.category-header {
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .category-header:hover {
+    background: #3a3a3a !important;
+  }
+
+  .category-header.collapsed {
+    opacity: 0.7;
+  }
+
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+  }
+
+  .collapsed .toggle-btn {
+    transform: rotate(-90deg);
+  }
+
+  .collapsed-section > :not(.category-header) {
+    display: none;
+  }
+
+  .counter::before {
+    content: "(" attr(data-count) ")";
+    font-size: 0.8em;
+    opacity: 0.7;
+  }
